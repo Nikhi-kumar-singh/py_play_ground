@@ -12,9 +12,9 @@ def print_number(n):
 
 
 
-def thread_runner(n): 
+def thread_runner(values): 
   with th(max_workers=3) as executor:
-    res=executor.map(print_number,n)
+    res=executor.map(print_number,values)
 
   return res
 
