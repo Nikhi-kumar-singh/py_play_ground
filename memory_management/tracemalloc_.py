@@ -13,7 +13,7 @@ def create_list(n):
 def main():
  tracemalloc.start()
  n=1000000
- create_list(n)
+ l1=create_list(n)
 
  snapshot=tracemalloc.take_snapshot()
  top_stats=snapshot.statistics("lineno")
