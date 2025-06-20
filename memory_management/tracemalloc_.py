@@ -6,14 +6,14 @@ this code is needs to be fixed it is not working
 import tracemalloc
 
 
-def create_list():
- return [i for i in range(100000)]
+def create_list(n):
+ return [i for i in range(n)]
 
 
 def main():
  tracemalloc.start()
-
- create_list()
+ n=1000000
+ create_list(n)
 
  snapshot=tracemalloc.take_snapshot()
  top_stats=snapshot.statistics("lineno")
