@@ -1,0 +1,9 @@
+Below are some exceptions mentioned below:
+
+ZeroDivisionError
+FileNotFoundError
+ValueError
+TypeError
+NameError
+
+
