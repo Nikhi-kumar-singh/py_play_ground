@@ -65,3 +65,9 @@ df_down_sampled=pd.concat([df_maj_down_sampled,df_min]).reset_index(drop=True)
 
 print(f"shape of up sampled data : {df_up_sampled.shape}")
 print(f"shape of down sampled data : {df_down_sampled.shape}")
+
+
+print(f"value of targets of the up sampled data : {df_up_sampled["target"].value_counts()}")
+
+
+print(f"value of targets of the down sampled data : {df_down_sampled["target"].value_counts()}")
