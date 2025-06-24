@@ -100,16 +100,27 @@ print(f"graduate : {transformed_graduate}")
 print(f"post graduate : {transformed_pg}")
 
 
+print(f"implementing target guided ordinal encoding\n")
+
+df=pd.DataFrame({
+    "city""":["new_york","london","paris","tokyo","new_york","paris"],
+    "price":[200,150,300,250,150,300]
+})
 
 
+print(df.head())
+
+city_mean_price=df.groupby("city")["price"].mean()
+print(city_mean_price)
 
 
+df["city_encoded"]=df["city"].map(city_mean_price)
 
+print(df.head())
 
-
-
-
-
+x=df["city"]
+y=df["city_encoded"]
+print([x,y])
 
 
 
