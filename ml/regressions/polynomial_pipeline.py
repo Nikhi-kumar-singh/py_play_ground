@@ -20,6 +20,11 @@ def polynomial_regression(degree,x,y):
         ("lin_reg",lin_reg)
     ])
 
+    # model=Pipeline([
+    #     ("feature_expansion",poly_features),
+    #     ("regressor",lin_reg)
+    # ])
+
     x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=43)
 
     model.fit(x_train,y_train)
