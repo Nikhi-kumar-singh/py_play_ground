@@ -1,0 +1,7 @@
+from sklear.metrics import
+mean_absolute_error,
+mean_squared_error,
+r2_score,
+confusion_matrix,
+accuracy_score,
+classification_report
