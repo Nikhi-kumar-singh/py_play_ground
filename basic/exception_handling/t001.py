@@ -60,6 +60,22 @@ def fun5():
   print(f"code is successfully executed")
 
 
+def fun6():
+  try:
+      # Code that might fail
+      print("Trying code")
+      x = 1 / 0
+  except ZeroDivisionError:
+      # Like "catch"
+      print("Caught division by zero")
+  else:
+      # Runs if no error
+      print("No errors occurred")
+  finally:
+      # Always runs
+      print("Cleaning up (finally)")
+
+
 
 
 def main():
