@@ -6,4 +6,4 @@ scikit-learn
 keras
 tensorflow
 ipykernel
-pipdeptree
+nbclient
